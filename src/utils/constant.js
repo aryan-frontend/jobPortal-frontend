@@ -1,1 +1,1 @@
-export const USER_API_END_POINT = "https://jobportal-backend-z4zz.onrender.com/api/v1/user";
+export const USER_API_END_POINT = "https://jobportal-backend-z9nr.onrender.com/api/v1/user";
