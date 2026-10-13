@@ -34,6 +34,9 @@ function App() {
 
       } catch (error) {
         console.log("User not authenticated");
+        console.log("Status:", error.response?.status);
+        console.log("Message:", error.response?.data?.message);
+        console.log("Error:", error.message);
       }
     };
 

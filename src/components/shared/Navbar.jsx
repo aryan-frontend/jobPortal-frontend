@@ -11,7 +11,6 @@ import { toast } from 'sonner'
 import { setUser } from '../../redux/authSlice'
 
 export const Navbar = () => {
-  // let user = false;
   const { user } = useSelector((store) => store.auth);
   const navigate = useNavigate();
   const dispatch = useDispatch();

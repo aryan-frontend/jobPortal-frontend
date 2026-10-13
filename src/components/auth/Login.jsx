@@ -12,7 +12,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setUser } from '../../redux/authSlice'
 
 export const Login = () => {
-    // const {loading, user} = useSelector((store) => store.auth);
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [input, setInput] = useState({
@@ -36,6 +35,9 @@ export const Login = () => {
                 },
                 withCredentials: true,
             })
+
+            console.log("API BASE URL:", USER_API_END_POINT);
+            console.log("LOGIN URL:", `${USER_API_END_POINT}/login`);
             if (res.data.success) {
                 dispatch(setUser(res.data.user));
                 navigate("/");

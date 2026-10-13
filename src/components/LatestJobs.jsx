@@ -8,7 +8,7 @@ export const LatestJobs = () => {
             <h1 className='text-4xl font-bold'><span className='text-[#6A38C2]'>Latest & Top </span> Job Openings</h1>
             <div className='grid grid-cols-3 gap-4 my-5'>
                 {
-                    randomJobs.slice().map((item, index) => <LatestJobCards />)
+                    randomJobs.slice().map((item, index) => <LatestJobCards key={index}/>)
                 }
 
             </div>
